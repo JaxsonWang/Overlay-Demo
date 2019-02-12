@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Title</title>
+  <link type="text/css" rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<input type="button" value="点击弹窗" onclick="test1();" />
+<script src="../dist/index.js"></script>
+<script>
+  function test1() {
+    Overlay.full({
+      title: '你好',
+      content: '世界',
+      confirm: function () {
+        console.log('确定')
+      },
+      cancel: function () {
+        console.log('取消')
+      }
+    })
+  }
+</script>
+</body>
+</html>

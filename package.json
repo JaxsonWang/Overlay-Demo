@@ -1,0 +1,25 @@
+{
+  "name": "overlay",
+  "version": "1.0.0",
+  "description": "通用弹出框(overlay)组件",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "webpack --progress --color",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "王瑾",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "standard": "^12.0.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^3.0.2"
+  }
+}
